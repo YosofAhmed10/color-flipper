@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+  font-family: "Leckerli One", cursive;
+}
+
+.root {
+  height: 100vh;
+}
+
+.header {
+  padding: 25px 50px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input {
+  padding: 15px;
+  color: #2f4b5e;
+  background-color: #ffffff;
+  outline: none;
+  border: 0px;
+  cursor: pointer;
+}
+
+.header > input:first-child {
+  color: #5aaeec;
+}
+
+.main {
+  height: calc(100vh - 98px);
+}
+
+.main > div {
+  /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50, -50); */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+
+main > div > input {
+  margin-left: 60px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 280px) {
+  .header {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  main > div {
+    display: inline-block;
+    text-align: center;
+  }
+  main > div > input {
+    margin-left: 0px;
+  }
+}
